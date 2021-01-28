@@ -5,7 +5,7 @@
 [![Build](https://github.com/JetBrains/intellij-platform-plugin-template/workflows/Build/badge.svg)][gh:build]
 [![Slack](https://img.shields.io/badge/Slack-%23intellij--platform--plugin--template-blue)][jb:slack]
 
-> **TL;DR:** Click the <kbd>Use this template</kbd> button and clone it in IntelliJ IDEA.
+> **TL;DR:** Click the <kbd>Use this template</kbd> action and clone it in IntelliJ IDEA.
 
 <!-- Plugin description -->
 **IntelliJ Platform Plugin Template** is a repository that provides a pure boilerplate template to make it easier to create a new plugin project (check the [Creating a repository from a template][gh:template] article).
@@ -17,7 +17,7 @@ The main goal of this template is to speed up the setup phase of plugin developm
 
 If you're still not quite sure what this is all about, read our introduction: [What is the IntelliJ Platform?][docs:intro]
 
-> **TIP**: Click the <kbd>Watch</kbd> button on the top to be notified about releases containing new features and fixes.
+> **TIP**: Click the <kbd>Watch</kbd> action on the top to be notified about releases containing new features and fixes.
 
 
 ### Table of contents
@@ -47,7 +47,7 @@ In this README, we will highlight the following elements of template-project cre
 
 Before we dive into plugin development and everything related to it, it's worth mentioning the benefits of using GitHub Templates. By creating a new project using the current template, you start with no history and no reference to this repository. This allows you to create a new repository easily without having to copy and paste previous content, clone repositories, or clear the history manually.
 
-All you have to do is click the <kbd>Use this template</kbd> button.
+All you have to do is click the <kbd>Use this template</kbd> action.
 
 ![Use this template][file:use-this-template.png]
 
@@ -250,7 +250,7 @@ The release process depends on the workflows already described above. When your 
 
 The draft release is a working copy of a release, which you can review before publishing. It includes a predefined title and git tag, which is the current version of the plugin, for example, `v0.0.1`. The changelog is provided automatically using the [gradle-changelog-plugin][gh:gradle-changelog-plugin]. An artifact file is also built with the plugin attached. Every new Build overrides the previous draft to keep your *Releases* page clean.
 
-When you edit the draft and use the <kbd>Publish release</kbd> button, GitHub will tag your repository with the given version and add a new entry to the Releases tab. Next, it will notify users that are *watching* the repository, and it will trigger the final [Release](.github/workflows/release.yml) workflow.
+When you edit the draft and use the <kbd>Publish release</kbd> action, GitHub will tag your repository with the given version and add a new entry to the Releases tab. Next, it will notify users that are *watching* the repository, and it will trigger the final [Release](.github/workflows/release.yml) workflow.
 
 ### Publishing the plugin
 
