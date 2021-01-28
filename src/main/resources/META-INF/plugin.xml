@@ -1,5 +1,5 @@
 <idea-plugin>
-    <id>org.jetbrains.plugins.template</id>
+    <id>com.github.glestorn.plugintemplate</id>
     <name>Github issues viewer</name>
     <vendor email="galukgleb@gmail.com">Viewer</vendor>
 
@@ -8,8 +8,8 @@
     <depends>com.intellij.modules.platform</depends>
 
     <extensions defaultExtensionNs="com.intellij">
-        <applicationService serviceImplementation="org.jetbrains.plugins.template.services.MyApplicationService"/>
-        <projectService serviceImplementation="org.jetbrains.plugins.template.services.MyProjectService"/>
+        <applicationService serviceImplementation="com.github.glestorn.plugintemplate.services.MyApplicationService"/>
+        <projectService serviceImplementation="com.github.glestorn.plugintemplate.services.MyProjectService"/>
         <applicationService serviceInterface="ApplicationComponent"
                             serviceImplementation="impl.ApplicationComponentImpl"/>
         <projectConfigurable parentId="tools" instance="settings.GithubPluginSettings"
@@ -18,7 +18,7 @@
     </extensions>
 
     <applicationListeners>
-        <listener class="org.jetbrains.plugins.template.listeners.MyProjectManagerListener"
+        <listener class="com.github.glestorn.plugintemplate.listeners.MyProjectManagerListener"
                   topic="com.intellij.openapi.project.ProjectManagerListener"/>
     </applicationListeners>
     <actions>

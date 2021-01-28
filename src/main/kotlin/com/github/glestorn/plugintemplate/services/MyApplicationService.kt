@@ -1,6 +1,6 @@
-package org.jetbrains.plugins.template.services
+package com.github.glestorn.plugintemplate.services
 
-import org.jetbrains.plugins.template.MyBundle
+import com.github.glestorn.plugintemplate.MyBundle
 
 class MyApplicationService {
 
